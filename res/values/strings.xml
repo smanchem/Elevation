@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Elevation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Exit</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="button_record">Record</string>
+    <string name="button_log">Logs</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="title_activity_display_log">Elevation</string>
+    <string name="title_activity_choose_session">Elevation</string>
+    <string name="previous_session">Previous Session</string>
+    <string name="ascent">Ascent: </string>
+    <string name="descent">Descent: </string>
+    <string name="distance">Distance: </string>
+    <string name="duration">Duration: </string>
+    <string name="long_session">Long Session (GPS)</string>
+    <string name="short_session">Short Session (Sensors)</string>
+    <string name="choose_session">Choose Session</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="back">Back</string>
+    <string name="title_activity_long_session">Elevation</string>
+    <string name="title_activity_short_session">Elevation</string>
+    <string name="title_activity_summary">Elevation</string>
+    <string name="title_activity_main_accelerometer">Elevation</string>
+    <string name="title_activity_paused">PausedActivity</string>
+    <string name="previos_session">PreviosSession</string>
+
+</resources>

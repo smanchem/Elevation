@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firstapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.elevation.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.elevation.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.example.myapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.elevation.DisplayLogActivity"
+            android:label="@string/title_activity_display_log"
+            android:parentActivityName="com.example.elevation.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.elevation.ChooseSessionActivity"
+            android:label="@string/title_activity_choose_session"
+            android:parentActivityName="com.example.elevation.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.elevation.LongSessionActivity"
+            android:label="@string/title_activity_long_session"
+            android:parentActivityName="com.example.elevation.ChooseSessionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.ChooseSessionActivity" />
+        </activity>
+        <activity
+            android:name="com.example.elevation.ShortSessionActivity"
+            android:label="@string/title_activity_short_session"
+            android:parentActivityName="com.example.elevation.ChooseSessionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.ChooseSessionActivity" />
+        </activity>
+        <activity
+            android:name="com.example.elevation.SummaryActivity"
+            android:label="@string/title_activity_summary"
+            android:parentActivityName="com.example.elevation.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.androidexample.accelerometerexample.MainAccelerometer"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.elevation.MainAccelerometer"
+            android:label="@string/title_activity_main_accelerometer"
+            android:parentActivityName="com.example.elevation.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.elevation.PausedActivity"
+            android:label="@string/title_activity_paused"
+            android:parentActivityName="com.example.elevation.ShortSessionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.ShortSessionActivity" />
+        </activity>
+    </application>
+
+</manifest>
