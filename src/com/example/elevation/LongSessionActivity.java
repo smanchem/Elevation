@@ -93,7 +93,7 @@ public class LongSessionActivity extends ActionBarActivity {
 						System.out.println("Exception: Caught IO");
 					}	
 	        	    
-    	            
+    	            /*
 	        		JSONObject obj;
 					try {
 						obj = new JSONObject (responseString);
@@ -105,7 +105,7 @@ public class LongSessionActivity extends ActionBarActivity {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-	        		
+	        		*/
 	        		
 	        		// Sleep for 30 seconds
 	        		background.sleep(30000);
